@@ -1,0 +1,43 @@
+---
+import Layout from "../layout/Layout.astro";
+---
+
+<Layout title="Home">
+  <div
+    class="hero-section relative w-full h-screen bg-cover bg-center flex items-center justify-center"
+  >
+    <!-- Overlay oscuro -->
+    <div class="absolute inset-0 bg-black/50 z-0"></div>
+
+    <!-- Contenido -->
+    <div
+      class="relative z-10 text-center border-2 border-gray-700 p-8 rounded-xl bg-black/50 bg-opacity-30 backdrop-blur-sm"
+    >
+      <h1 class="text-4xl md:text-6xl font-bold text-red-600 mb-4 font-serif">
+        SebastianFeltes
+      </h1>
+      <h2 class="text-xl md:text-2xl text-red-500 font-mono">Desarrollador Fullstack</h2>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .hero-section {
+    background-image: url("https://wallpapercave.com/wp/wp4110949.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  /* Fallback if the image doesn't load */
+  .hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d1b69 50%, #8b0000 100%);
+    z-index: -1;
+  }
+</style>

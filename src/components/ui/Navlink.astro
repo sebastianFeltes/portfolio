@@ -1,0 +1,8 @@
+---
+import "../../styles/global.css";
+const { ruta, texto } = Astro.props;
+---
+
+<span>
+  <a class="text-orange-600 font-extralight hover:underline" href={`/${ruta}`}>{texto}</a>
+</span>

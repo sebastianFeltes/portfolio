@@ -1,0 +1,21 @@
+---
+import "../styles/global.css";
+import Navlink from "./ui/Navlink.astro";
+---
+
+<nav class=`flex w-full`>
+  <ul class="flex justify-around w-full">
+    <li>
+      <Navlink ruta="about" texto="Acerca de" />
+    </li>
+    <li>
+      <Navlink ruta="" texto="Home" />
+    </li>
+    <li>
+      <Navlink ruta="contact" texto="Contacto" />
+    </li>
+    <li>
+      <Navlink ruta="skills" texto="Habilidades" />
+    </li>
+  </ul>
+</nav>
